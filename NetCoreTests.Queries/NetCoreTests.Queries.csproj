@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetCoreTest.Data.Model\NetCoreTests.Data.Model.csproj" />
+    <ProjectReference Include="..\NetCoreTests.Data.Acess\NetCoreTests.Data.Acess.csproj" />
+  </ItemGroup>
+
+</Project>

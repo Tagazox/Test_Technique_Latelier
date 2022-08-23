@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="data.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetCoreTest.Data.Model\NetCoreTests.Data.Model.csproj" />
+    <ProjectReference Include="..\NetCoreTests.Data.Acess\NetCoreTests.Data.Acess.csproj" />
+    <ProjectReference Include="..\NetCoreTests.Queries\NetCoreTests.Queries.csproj" />
+  </ItemGroup>
+
+</Project>
