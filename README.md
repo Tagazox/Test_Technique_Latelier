@@ -1,5 +1,7 @@
 BackEnd test for l'Atelier
 
-Lancer le projet à l'aide du projet NetCoreTest.
-Le tester à l'aide des projet NetCoreTests.Data.Acess.Tests et PlayersStatisticsQueryProcessorTests.
-L'interface swagger est activée.'
+Lancer le projet Ã  l'aide du projet NetCoreTest.
+
+Le tester Ã  l'aide des projet NetCoreTests.Data.Acess.Tests et PlayersStatisticsQueryProcessorTests.
+
+L'interface swagger est activÃ©e.
