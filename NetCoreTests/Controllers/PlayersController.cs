@@ -24,7 +24,7 @@ namespace NetCoreTests.Controllers
             return queryProcessor.GetOrderByRank().ToList();
         }
 
-        [HttpGet("{id}", Name = "GetPlayerOrderById")]
+        [HttpGet("{id}", Name = "GetPlayerById")]
         public Player Get(int id)
         {
             DataAcessLayer dal = new DataAcessLayer(FilePath);
