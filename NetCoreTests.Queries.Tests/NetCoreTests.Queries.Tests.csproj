@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreTest.Data.Model\NetCoreTests.Data.Model.csproj" />
     <ProjectReference Include="..\NetCoreTests.API.Common\NetCoreTests.API.Common.csproj" />
     <ProjectReference Include="..\NetCoreTests.Data.Acess\NetCoreTests.Data.Acess.csproj" />
     <ProjectReference Include="..\NetCoreTests.Queries\NetCoreTests.Queries.csproj" />

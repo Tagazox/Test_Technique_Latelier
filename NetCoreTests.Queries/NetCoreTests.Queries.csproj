@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreTest.Data.Model\NetCoreTests.Data.Model.csproj" />
     <ProjectReference Include="..\NetCoreTests.Data.Acess\NetCoreTests.Data.Acess.csproj" />
+    <ProjectReference Include="..\NetCoreTests.Data.Model\NetCoreTests.Data.Model.csproj" />
   </ItemGroup>
 
 </Project>

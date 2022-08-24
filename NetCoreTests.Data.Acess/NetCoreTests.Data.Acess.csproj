@@ -11,14 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreTest.Data.Model\NetCoreTests.Data.Model.csproj" />
     <ProjectReference Include="..\NetCoreTests.API.Common\NetCoreTests.API.Common.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="data - Copier.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>

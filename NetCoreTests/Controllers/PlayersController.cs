@@ -9,17 +9,18 @@ namespace NetCoreTests.Controllers
     [Route("[controller]")]
     public class PlayersController : ControllerBase
     {
-        public string FilePath = $"{Path.GetDirectoryName(Environment.ProcessPath)}\\data.json";
+        string _filePath;
         private readonly ILogger<PlayersController> _logger;
-        public PlayersController(ILogger<PlayersController> logger)
+        public PlayersController(ILogger<PlayersController> logger, IWebHostEnvironment environment)
         {
             _logger = logger;
+            _filePath = environment.IsDevelopment() ? $"{Path.GetDirectoryName(Environment.ProcessPath)}\\data.json" : "./data.json";
         }
 
         [HttpGet(Name = "GetPlayersOrderByRank")]
         public IEnumerable<Player> Get()
         {
-            DataAcessLayer dal = new DataAcessLayer(FilePath);
+            DataAcessLayer dal = new DataAcessLayer(_filePath);
             PlayersQueryProcessor queryProcessor = new PlayersQueryProcessor(dal);
             return queryProcessor.GetOrderByRank().ToList();
         }
@@ -27,7 +28,7 @@ namespace NetCoreTests.Controllers
         [HttpGet("{id}", Name = "GetPlayerById")]
         public Player Get(int id)
         {
-            DataAcessLayer dal = new DataAcessLayer(FilePath);
+            DataAcessLayer dal = new DataAcessLayer(_filePath);
             PlayersQueryProcessor queryProcessor = new PlayersQueryProcessor(dal);
             return queryProcessor.GetById(id);
         }
