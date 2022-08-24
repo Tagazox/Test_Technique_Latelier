@@ -21,6 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreTests.Data.Acess.Tes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F1DBFE1-C8E5-4C61-84DA-D6F7291C1A2A}"
 	ProjectSection(SolutionItems) = preProject
+		dockerfile = dockerfile
 		README.md = README.md
 	EndProjectSection
 EndProject
